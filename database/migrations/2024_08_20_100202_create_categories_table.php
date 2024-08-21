@@ -15,8 +15,8 @@ return new class extends Migration
             $table->id();
             $table->string("category_name");
             $table->string("category_description");
-            $table->string("");
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 
